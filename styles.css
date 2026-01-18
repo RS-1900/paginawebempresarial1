@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: rgb(215, 215, 215);;
+    }
+}
+
+
+
+@media (min-widht: 768px){
+    .nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+@media (min-widht: 1024px){
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+.header{
+    padding: 60px;
+    text-align: left;
+    background-color: rgb(76, 133, 68);
+    color: white;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(215, 215, 215);
+}
+
+.footer{
+    background: rgb(215, 215, 215);
+    color:white;
+    text-align: left;
+    padding:1rem
+}
+
+
+.nav{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+
+
+.mitad{
+    color: rgb(12, 13, 12);
+}
+
+
+.contenedor{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 270px ;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.imagen{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.food1{
+    background-image: url(https://media.istockphoto.com/id/1457433817/photo/group-of-healthy-food-for-flexitarian-diet.jpg?s=612x612&w=0&k=20&c=v48RE0ZNWpMZOlSp13KdF1yFDmidorO2pZTu2Idmd3M=);
+}
+
+.food2{
+    background-image: url(https://thumbs.dreamstime.com/b/happy-people-eating-fast-food-city-travelling-happy-tourist-people-eating-fast-food-city-travelling-119390606.jpg);
+}
+
+.food3{
+    background-image: url(https://www.cambridge.org/core/blog/wp-content/uploads/2023/12/BJN-Paper-Spotlight-blog-free-school-meals.png);
+}
+
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: black;
+    color:white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+} 
+
+.card:hover{
+    background-color:rgb(132, 210, 121);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
